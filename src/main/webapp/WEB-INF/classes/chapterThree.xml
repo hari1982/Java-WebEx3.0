@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="chapterThree" namespace="/struts2/chapterThree" extends="struts-default">
+		<action name="AdminPortFolio">
+			<result>/struts2/AdminPortfolio.jsp</result>
+		</action>
+		<action name="AddImage">
+			<result>/struts2/ImageAdded.jsp</result>
+		</action>
+		<action name="RemoveImage">
+			<result>/struts2/ImageRemoved.jsp</result>
+		</action>
+		<action name="Register" class="struts2.chapterThree.Register">
+   				<result>/struts2/RegistrationSuccess.jsp</result>
+   				<result name="input">/struts2/Registration.jsp</result>
+		</action>
+		<action name="AddImage" >
+      		<result>/struts2/ImageUploadForm.jsp</result>
+   		</action>
+
+   		<action name="ImageUpload" class="struts2.chapterThree.ImageUpload">
+     		 <result>/struts2/ImageAdded.jsp</result>
+      		<result name="input">/struts2/ImageUploadForm.jsp</result>
+   		</action>
+	</package>
+</struts>
