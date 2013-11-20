@@ -18,4 +18,5 @@
 	</package> -->
 	<include file="chapterTwo.xml"></include>
 	<include file="chapterThree.xml"></include>
+	<include file="chapterFour.xml"></include>
 </struts>
